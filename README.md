@@ -88,6 +88,7 @@ full_adder fa3 (A[3],B[3],C3,S[3],C4);
 
 endmodule
 
+
 module test_4bit;
 
 reg [3:0] A;
