@@ -53,7 +53,7 @@ Note : File name should be with HDL Extension
 •	fa_4bit.v → Top Module for Adding 4-bit Inputs. 
 
 •	fa_4bit_test.v → Test bench 
-# code 
+# code (full_add)
 
 ```
 module full_adder(A,B,CIN,S,COUT);
@@ -62,6 +62,9 @@ output S,COUT;
 assign S=A^B^CIN;
 assign COUT=(A&B) | (CIN&(A^B));
 endmodule
+```
+# code(full_add_4bit)
+```
 module fulladd_4bit(A,B,C0,S,C4);
 input [3:0] A,B;
 input C0;
@@ -75,7 +78,7 @@ full_adder fa3 (A[3],B[3],C3,S[3],C4);
 endmodule
 ```
 
-# testbench code
+# code (full_add_test)
 
 ```
 module test_4bit;
