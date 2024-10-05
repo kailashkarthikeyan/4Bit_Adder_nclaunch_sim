@@ -74,7 +74,9 @@ full_adder fa2 (A[2],B[2],C2,S[2],C3);
 full_adder fa3 (A[3],B[3],C3,S[3],C4);
 endmodule
 '''
+
 # testbench code
+
 '''
 module test_4bit;
 reg [3:0] A;
@@ -91,6 +93,7 @@ end initial
 #50 $finish;
 endmodule
 '''
+
 ## Functional Simulation: 
 
 	Invoke the cadence environment by type the below commands 
